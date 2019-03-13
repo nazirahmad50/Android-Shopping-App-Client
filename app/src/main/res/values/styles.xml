@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Rating Dialog styles-->
+    <style name="RatingDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:background">@android:color/white</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/RatingDialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/RatingDialogButtonStyle</item>
+
+
+    </style>
+
+    <style name="RatingDialogButtonStyle" parent="@style/Widget.AppCompat.ButtonBar.AlertDialog">
+
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+
+
+    </style>
+
+    <style name="RatingDialogFadeAnim">
+
+        <item name="android:windowEnterAnimation">@anim/fade_in_left</item>
+        <item name="android:windowExitAnimation">@anim/fade_in_right</item>
+
+
+    </style>
+
+    <!--Used For the splash screen Used in the manifest
+    Instead of normal splash screen the preview screen will be used as splash screen-->
+    <style name="FullScreenTheme" parent="AppTheme">
+
+        <item name="android:actionBarStyle">@style/FullScreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!--Used drawable layer list xml to display the logo instead of an normal image
+        Normal image would be stretched in the preview screen-->
+        <item name="android:windowBackground">@drawable/splash_screen_preview</item>
+
+    </style>
+
+    <style name="FullScreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+
+
+</resources>
